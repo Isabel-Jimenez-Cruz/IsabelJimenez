@@ -15,9 +15,9 @@
                      
                      if(xhr.status==400){
                          var json= JSON.parse(xhr.responseText);
-                         if(json.codigo_usuario.length !=0){
-                             $("#codigo_usuario > div").html(json.codigo_usuario);
-                             $("#codigo_usuario > input").addClass('is-invalid');
+                         if(json.cod.length !=0){
+                             $("#cod > div").html(json.codigo_usuario);
+                             $("#cod > input").addClass('is-invalid');
                          }
                      }
 

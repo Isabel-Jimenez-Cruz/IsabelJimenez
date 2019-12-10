@@ -14,12 +14,13 @@
             z-index: -1;
         }
   </style>
+  
 </head>
 
 <body>
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="<?php echo base_url('/index.php/principal/index')?>" style="color:orange"><h3>M<small>icro préstamos baratos</small></h3></a>
+      <a class="navbar-brand" href="<?php echo base_url('/index.php/welcome/index')?>" style="color:orange"><h3>M<small>icro préstamos baratos</small></h3></a>
       
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
@@ -31,7 +32,13 @@
       </div>
     </div>
 </nav>
-
+<br><br><br>
+<h1><center>
+<?php 
+$men =$mensaje;
+echo $men;
+?>
+</center></h1>
 <img src="<?php echo base_url('assets/img/creditos.jpg')?>" class="img-thumbnail mx-auto d-block" alt="Cinque Terre" width=80%>
 </body>
 </html>

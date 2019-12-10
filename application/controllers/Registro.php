@@ -24,17 +24,26 @@ class Registro extends CI_Controller {
             array(
                     'field' => 'nombre',
                     'label' => 'nombre de usuario',
-                    'rules' => 'required|alpha_numeric'
+                    'rules' => 'required|alpha_numeric',
+                    'errors' => array(
+                        'required' => 'Debes introducir un nombre.',
+                    ),
             ),
             array(
                     'field' => 'apellido',
                     'label' => 'apellido de usuario',
                     'rules' => 'required|alpha_numeric',
+                    'errors' => array(
+                        'required' => 'Debes introducir un apellido.',
+                    ),
             ),
             array(
                     'field' => 'contraseña',
                     'label' => 'contraseña de usuario',
-                    'rules' => 'required|alpha_numeric'
+                    'rules' => 'required|alpha_numeric',
+                    'errors' => array(
+                        'required' => 'Debes introducir una %s.',
+                    ),
             ),
         );
     

@@ -16,19 +16,21 @@ class Borrado extends CI_Controller {
     }
     public function eliminar(){
        // $this->form_validation->set_error_delimiters('', '');
-        
+    
+       //FUNCION DEL HELPER PARA LA VALIDACION DE CAMPOS
         $rules= valiBorrado();
         $this->form_validation->set_rules($rules);
-     //  
+      
       
         //VALIDACION DEL FORMULARIO:
        
         if ($this->form_validation->run() == FALSE) {
-            //    $errores= array(
-              //     'codigo_usuario' => form_error('codigo_usuario')
-             //   );
-               echo json_encode($errores);
-              //  $this->output->set_status_header(400);
+            //ARRAY QUE CONTIENE LOS MENSAJES DE ERRORES DE CADA CAMPO DEL FORMULARIO.
+            //  $errores= array(
+            //      'codigo_usuario' => form_error('codigo_usuario')
+            //   );
+            //   echo json_encode($errores);
+            //  $this->output->set_status_header(400);
                 $this->load->view('borrado');
               
         }
